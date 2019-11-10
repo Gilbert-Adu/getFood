@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" type="text/css" href="landingPage.css">
+  </head>
+
+  <body>
+    <!--navigation bar tabs-->
+  <div id="app">
+    <div class="nav-bar">
+      <div class="nav-bar-tabs">
+        <ul>
+          <button><li><a href="./foods.html" class="tab">Foods</a></li></button>
+          <button @mouseover="updateBreakfast"><li><a href="./breakfast.html" class="tab">Breakfast</a></li></button>
+          <button @mouseover="updateLunch" @mouseover="updatelunchMessage"><li><a href="./lunch.html" class="tab">Lunch</a></li></button>
+          <button @mouseover="updateDinner"><li><a href="./dinner.html" class="tab">Dinner</a></li></button>
+          <button><li><a href="./help.html" class="tab">Help</a></li></button>
+        </ul>
+      </div>
+      <!-- end of navigation bar tabs-->
+
+      <!-- header with image-->
+      <div class="landingPage-image">
+        <img v-bind:src="image" alt="food" style="width:100%;height:600px;">
+        <div class="img-text"> Let's know what you want to eat!</div>
+      </div>
+
+      <!--company description-->
+      <div class="company-descr">
+        <div class="first-text">
+          <h1>Who are we?</h1>
+          <p>
+            According to the National Oceanic and Atmospheric<br>
+            Administration, Ted, Scambos, NSIDClead scientist, puts<br> the
+            potentially record low maximum sea ice extent this<br> year down
+            to low down to low ice extent in the Pacific and a late drop<br>
+            in ice extent in the Barents Sea.
+          </p>
+        </div>
+
+        <div class=second-landing>
+          <img class="second-landing-image" src="../images/fruit-bowl.jpg" alt="food" style="width:50%;height:100%;">
+        </div>
+        <div class="third-landing">
+          <div class="third-landing-text">
+            Let us deliver your food!
+          </div>
+          <img class="third-landing-image" src="../images/maize.jpg" alt="food" style="width:50%;height: 50%;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </body>
+
+  <!-- javascript begins here-->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="landingPage.js"></script>
+</html>
